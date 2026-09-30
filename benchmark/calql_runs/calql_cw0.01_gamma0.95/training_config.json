@@ -1,0 +1,48 @@
+{
+  "algorithm": "CalQL",
+  "data_path": "pid_dataset.csv",
+  "epochs": 300,
+  "steps_per_epoch": 1000,
+  "total_steps": 300000,
+  "batch_size": 256,
+  "gamma": 0.95,
+  "actor_learning_rate": 0.0001,
+  "critic_learning_rate": 0.0003,
+  "temp_learning_rate": 0.0001,
+  "alpha_learning_rate": 0.0001,
+  "tau": 0.005,
+  "n_critics": 2,
+  "initial_temperature": 1.0,
+  "initial_alpha": 1.0,
+  "alpha_threshold": 10.0,
+  "conservative_weight": 0.01,
+  "n_action_samples": 10,
+  "soft_q_backup": false,
+  "max_q_backup": false,
+  "hidden_units": [
+    256,
+    256
+  ],
+  "use_layer_norm": true,
+  "standardize_observations": false,
+  "standardize_rewards": false,
+  "checkpoint_every": 5,
+  "seed": 0,
+  "device": "cuda:0",
+  "obs_cols": [
+    "A",
+    "I",
+    "P",
+    "R",
+    "T",
+    "err_P",
+    "err_T",
+    "int_err_P",
+    "int_err_T"
+  ],
+  "action_cols": [
+    "u_I",
+    "u_Tc"
+  ],
+  "reward_col": "reward"
+}

@@ -1,0 +1,42 @@
+{
+  "algorithm": "IQL",
+  "data_path": "pid_dataset.csv",
+  "epochs": 100,
+  "steps_per_epoch": 1000,
+  "total_steps": 100000,
+  "batch_size": 256,
+  "gamma": 0.9,
+  "actor_learning_rate": 0.0003,
+  "critic_learning_rate": 0.0003,
+  "expectile": 0.9,
+  "weight_temp": 5.0,
+  "max_weight": 100.0,
+  "tau": 0.005,
+  "n_critics": 2,
+  "hidden_units": [
+    256,
+    256
+  ],
+  "use_layer_norm": true,
+  "standardize_observations": false,
+  "standardize_rewards": false,
+  "checkpoint_every": 1,
+  "seed": 0,
+  "device": "cuda:0",
+  "obs_cols": [
+    "A",
+    "I",
+    "P",
+    "R",
+    "T",
+    "err_P",
+    "err_T",
+    "int_err_P",
+    "int_err_T"
+  ],
+  "action_cols": [
+    "u_I",
+    "u_Tc"
+  ],
+  "reward_col": "reward"
+}
