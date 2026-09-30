@@ -38,7 +38,7 @@ venv/
 # =========================
 # HOFLON datasets
 # =========================
-*.csv
+
 *.parquet
 *.pkl
 *.pickle
