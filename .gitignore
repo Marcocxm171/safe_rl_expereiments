@@ -1,0 +1,98 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# IDE / OS
+# =========================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# =========================
+# Environment / secrets
+# =========================
+.env
+.env.*
+*.key
+*.pem
+.venv/
+venv/
+*.d3
+
+# =========================
+# HOFLON datasets
+# =========================
+*.csv
+*.parquet
+*.pkl
+*.pickle
+
+# =========================
+# Trained models / checkpoints
+# =========================
+*.d3
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+checkpoints/
+models/
+
+# =========================
+# Experiment outputs
+# =========================
+logs/
+runs/
+
+# TensorBoard
+events.out.tfevents.*
+
+# =========================
+# Python build / test junk
+# =========================
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.coverage
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.temp
+*.bak
+~$*
+
+*.dll
+*.pyd
+*.so
+*.dylib
+*.dll
+*.pyd
+*.so
+*.dylib
+*.pth
+*.pt
+*.h5
+*.pickle
+*.pkl
+*.ckpt
